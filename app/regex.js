@@ -39,5 +39,11 @@ exports.regexAnswers = {
 
   isUSD: function(str) {
 
+      var myRe = new RegExp(/$/);
+
+      var returnValue = myRe.test(str);
+
+      return returnValue;
+
   }
 };
